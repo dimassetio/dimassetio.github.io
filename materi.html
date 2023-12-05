@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .navbar-nav .nav-link:hover {
+        background-color: #0a5c0a;
+      }
+      .container {
+        text-align: justify; /* Rata kiri dan rata kanan */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-success mb-2">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="materi.html">
+          <i class="fa-solid fa-calculator" style="color: #ffffff"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                aria-current="page"
+                href="materi.html"
+                >Materi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="kalkulator.html">Kalkulator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="kuis.html">Kuis</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Of Navbar -->
+
+    <!-- Page Content -->
+    <div class="container" style="max-width: 80%">
+      <h1 class="mb-2">Materi Konversi Bilangan Komputer</h1>
+      <hr />
+      <!-- Definisi -->
+      <h4>Definisi Konversi Bilangan Dan Jenis Sistem Bilangan</h4>
+      <p>
+        <b>Konversi Bilangan</b> adalah proses mengubah bentuk bilangan dari
+        satu bentuk ke bentuk bilangan lain yang memiliki nilai sama. Ini akan
+        digunakan dalam sistem bilangan komputer. Sistem bilangan digunakan
+        untuk menentukan representasi suatu angka dengan simbol-simbol yang
+        telah disepakati. Ini melibatkan serangkaian pesan simbol yang mewakili
+        angka, dengan batasan tertentu untuk operasi aritmatika seperti
+        penjumlahan, perkalian, dan operasi aritmatika lainnya.
+      </p>
+      <p>
+        Sistem bilangan juga menjadi bagian integral dalam proses penentuan
+        alamat IP. Setiap sistem bilangan memiliki radix atau basis yang
+        berfungsi sebagai nilai referensi. Ada empat sistem bilangan utama:
+        biner, desimal, oktal, dan heksadesimal, masing-masing dengan radix yang
+        berbeda. Berikut adalah tabel yang menyajikan jenis-jenis sistem
+        bilangan beserta radix dan simbol yang digunakan untuk masing-masing
+        sistem bilangan:
+      </p>
+      <img
+        src="img/tabel_bilangan.png"
+        alt="tabel_sistem_bilangan"
+        style="width: auto; height: 350px"
+      />
+      <ol>
+        <li>
+          Bilangan Biner <br />
+          <p>
+            Dalam sistem bilangan biner, menggunakan 2 simbol, yakni ‘1’ dan
+            ‘0’. Oleh karena itu, biner mempunyai radix 2. Contoh bilangan biner
+            adalah 1100.
+          </p>
+        </li>
+        <li>
+          Bilangan Oktal
+          <p>
+            Sistem bilangan oktal mempunyai radix 8. jadi simbol yang
+            digunanakan juga 8 yaitu ‘0’, ‘1’ ,’2′ ,’3′, ‘4’, ‘5’, ‘6’ dan ‘7’.
+            Bilangan ini digunakan sebagai alternatif untuk menyederhanakan
+            sistem pengkodean biner. Karena 8=23, sehingga 1 digit oktal dapat
+            mewakili 3 digit biner. Contoh bilangan oktal adalah 476.
+          </p>
+        </li>
+        <li>
+          Bilangan Desimal
+          <p>
+            Di sistem bilangan desimal, cara menghitung bilangannya dengan
+            menggunakan 10 simbol, yakni ‘0’, ‘1’ ,’2′ ,’3′, ‘4’, ‘5’, ‘6’, ‘7’,
+            ‘8’, dan ‘9’. Bilangan desimal mempunyai radix atau basis 10.
+          </p>
+        </li>
+        <li>
+          Bilangan Heksadesimal
+          <p>
+            Heksadesimal menggunakan 16 simbol, yakni ‘0’, ‘1’ ,’2′ ,’3′, ‘4’,
+            ‘5’, ‘6’, ‘7’, ‘8’, ‘9’, ‘A’, ‘B’, ‘C’, ‘D’, ‘E’, dan ‘F’. Oleh
+            karena itu heksadesimal mempunyai radix 16. Bilangan heksadesimal
+            juga digunakan untuk alternatif dalam penyederhanaan sistem
+            pengkodean biner. Hal ini dikarenakan 16=24, sehingga 1 digit
+            heksadesimal dapat mewakili 4 digit biner.
+          </p>
+        </li>
+      </ol>
+
+      <!-- Cara Konversi Bilangan -->
+      <h4>Cara Konversi Bilangan</h4>
+      <p>
+        Konversi bilangan bisa dilakukan antara jenis bilangan satu ke bilangan
+        yang lainnya. Di bawah ini ada beberapa cara konversi bilangan yang bisa
+        dilakukan, yaitu:
+      </p>
+      <ol>
+        <!-- Desimal -->
+        <li>
+          Konversi Bilangan Desimal ke Bilangan Lainnya
+          <p>
+            Untuk melakukan konversi dari bilangan desimal ke jenis bilangan
+            lainnya, langkah pertama yang perlu dilakukan adalah membagi
+            bilangan desimal tersebut dengan bilangan tujuan. Hasil pembagian
+            dibulatkan ke bawah, dan sisa hasil bagi disimpan. Proses ini
+            diulangi hingga hasil bagi lebih kecil dari bilangan tujuan, dan
+            sisa-sisa hasil bagi diurutkan dari paling akhir hingga paling awal.
+          </p>
+          <ul>
+            <li>
+              Konversi Bilangan Desimal Ke Biner
+              <p>
+                Cara konversi bilangan desimal ke biner adalah dengan membagi
+                bilangan desimal dengan 2 dan menyimpan sisa bagi per seitap
+                pembagian terus hingga hasil baginya lebih kecil dari basis 2.
+                Hasil konversi adalah urutan sisa bagi dari yang paling akhir
+                hingga paling awal. <br />
+                Contoh: <br />
+                <img
+                  src="img/dec2bin.png"
+                  alt="dec2bin"
+                  style="width: 300px; height: 350px"
+                />
+              </p>
+            </li>
+            <li>
+              Konversi Bilangan Desimal Ke Octal
+              <p>
+                Cara konversi bilangan desimal ke octal adalah dengan membagi
+                bilangan desimal dengan 8 dan menyimpan sisa bagi per setiap
+                pembagian terus hingga hasil baginya lebih kecil dari 8. Hasil
+                konversi adalah urutan sisa bagi dari yang paling akhir hingga
+                paling awal. <br />
+                Contoh: <br />
+                <img
+                  src="img/dec2oct.png"
+                  alt="dec2oct"
+                  style="width: 300px; height: 350px"
+                />
+              </p>
+            </li>
+            <li>
+              Konversi Bilangan Desimal Ke Hexadesimal
+              <p>
+                Cara konversi bilangan desimal ke octal adalah dengan membagi
+                bilangan desimal dengan 16 dan menyimpan sisa bagi per seitap
+                pembagian terus hingga hasil baginya lebih kecil dari 16. Hasil
+                konversi adalah urutan sisa bagi dari yang paling akhir hingga
+                paling awal. Apabila sisa bagi diatas 9 maka angkanya diubah,
+                untuk nilai 10 angkanya A, nilai 11 angkanya B, nilai 12
+                angkanya C, nilai 13 angkanya D, nilai 14 angkanya E, nilai 15
+                angkanya F. <br />
+                Contoh: <br />
+                <img
+                  src="img/dec2hex.png"
+                  alt="dec2hex"
+                  style="width: 300px; height: 350px"
+                />
+              </p>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Oktal -->
+        <li>
+          Konversi Bilangan Oktal ke Bilangan Lainnya
+          <ul>
+            <li>
+              Konversi Bilangan Octal Ke Desimal
+              <p>
+                Cara mengkonversi bilangan octal ke desimal adalah dengan
+                mengalikan satu-satu bilangan dengan 8 (basis octal) pangkat 0
+                atau 1 atau 2 dst dimulai dari bilangan paling kanan. Kemudian
+                hasilnya dijumlahkan. Contoh: <br />
+                <img
+                  src="img/oct2dec.png"
+                  alt="oct2dec"
+                  style="width: 250px; height: 200px"
+                />
+              </p>
+            </li>
+            <li>
+              Konversi Bilangan Octal Ke Biner
+              <p>
+                Konversi bilangan octal ke biner caranya dengan memecah bilangan
+                octal tersebut persatuan bilangan kemudian masing-masing diubah
+                kebentuk biner tiga angka. Maksudnya misalkan kita mengkonversi
+                nilai 2 binernya bukan 10 melainkan 010. Setelah itu hasil
+                seluruhnya diurutkan kembali. <br />
+                Contoh: <br />
+                <img
+                  src="img/oct2bin.png"
+                  alt="oct2bin"
+                  style="width: auto; height: 200px"
+                />
+              </p>
+            </li>
+            <li>
+              Konversi Bilangan Octal Ke Hexadesimal
+              <p>
+                Teknik mengonversi bilangan octal ke hexadesimal adalah dengan
+                mengubah bilangan octal menjadi biner kemudian mengubah binernya
+                menjadi hexa. Ringkasnya octal->biner->hexa. <br />
+                Contoh: <br />
+                <img
+                  src="img/oct2hex.png"
+                  alt="oct2hex"
+                  style="width: auto; height: 250px"
+                />
+              </p>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Hexadesimal -->
+        <li>
+          Konversi Bilangan Hexadesimal ke Bilangan Lainnya
+          <ul>
+            <li>
+              Konversi Bilangan Hexadesimal Ke Desimal
+              <p>
+                Cara mengkonversi bilangan biner ke desimal adalah dengan
+                mengalikan satu-satu bilangan dengan 16 (basis hexa) pangkat 0
+                atau 1 atau 2 dst dimulai dari bilangan paling kanan. Kemudian
+                hasilnya dijumlahkan. <br />
+                Contoh: <br />
+                <img
+                  src="img/hex2dec.png"
+                  alt="hex2dec"
+                  style="width: 250px; height: 200px"
+                />
+              </p>
+            </li>
+            <li>
+              Konversi Bilangan Hexadesimal Ke Biner
+              <p>
+                Sama dengan cara konversi bilanga octal ke biner, bedanya kalau
+                bilangan octal binernya harus 3 buah, bilangan desimal binernya
+                4 buah. Misal kita konversi 2 hexa menjadi biner hasilnya bukan
+                10 melainkan 0010. <br />
+                Contoh: <br />
+                <img
+                  src="img/hex2bin.png"
+                  alt="hex2bin"
+                  style="width: auto; height: 250px"
+                />
+              </p>
+            </li>
+            <li>
+              Konversi Bilangan Hexadesimal Ke Octal
+              <p>
+                Begitu juga dengan konversi hexa desimal ke octal yakni dengan
+                mengubah bilangan hexa ke biner kemudian diubah menjadi bilangan
+                octal. Ringkasnya hexa->biner->octal. <br />
+                Contoh: <br />
+                <img
+                  src="img/hex2oct.png"
+                  alt="hex2oct"
+                  style="width: auto; height: 250px"
+                />
+              </p>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Biner -->
+        <li>
+          Konversi Bilangan Biner ke Bilangan Lainnya
+          <ul>
+            <li>
+              Konversi Bilangan Biner Ke Desimal
+              <p>
+                Cara mengkonversi bilangan biner ke desimal adalah dengan
+                mengalikan satu-satu bilangan dengan 2 (basis biner) pangkat 0
+                atau 1 atau 2 dst dimulai dari bilangan paling kanan. Kemudian
+                hasilnya dijumlahkan. <br />
+                Contoh: <br />
+                <img
+                  src="img/bin2dec.png"
+                  alt="bin2dec"
+                  style="width: 250px; height: 200px"
+                />
+              </p>
+            </li>
+            <li>
+              Konversi Bilangan Biner Ke Octal
+              <p>
+                Konversi bilangan biner ke octal sebaliknya yakni dengan
+                mengelompokkan angka biner menjadi tiga-tiga dimulai dari
+                sebelah kanan kemudian masing-masing kelompok dikonversikan
+                kedalam angka desimal dan hasilnya diurutkan. <br />
+                Contoh : <br />
+                <img
+                  src="img/bin2oct.png"
+                  alt="bin2oct"
+                  style="width: auto; height: 300px"
+                />
+              </p>
+            </li>
+            <li>
+              Konversi Bilangan Biner Ke Hexadesimal
+              <p>
+                Teknik yang sama pada konversi biner ke octal. Hanya saja
+                pengelompokan binernya bukan tiga-tiga sebagaimana pada bilangan
+                octal melainkan harus empat-empat. <br>
+                Contoh: <br>
+                <img
+                  src="img/bin2hex.png"
+                  alt="bin2hex"
+                  style="width: auto; height: 300px"
+                />
+              </p>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <!-- End Of Content -->
+
+  </body>
+</html>
